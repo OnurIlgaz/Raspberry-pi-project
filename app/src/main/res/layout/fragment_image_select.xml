@@ -19,4 +19,12 @@
         android:textSize="34sp"
         android:textStyle="bold" />
 
+    <Button
+        android:id="@+id/selection2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/select"
+        android:textSize="18sp" />
+
 </FrameLayout>
