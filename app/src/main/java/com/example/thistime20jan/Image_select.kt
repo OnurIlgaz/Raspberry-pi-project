@@ -11,11 +11,7 @@ import android.view.ViewGroup
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [Image_select.newInstance] factory method to
- * create an instance of this fragment.
- */
+
 class Image_select : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
@@ -36,5 +32,5 @@ class Image_select : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_image_select, container, false)
     }
-    
+
 }
