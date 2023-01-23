@@ -22,7 +22,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView4"
-        android:name="com.example.App.Pdfselect"
+        android:name="com.example.thistime20jan.Pdfselect"
         android:layout_width="match_parent"
         android:layout_height="243dp" />
 

@@ -1,4 +1,4 @@
-package com.example.App
+package com.example.thistime20jan
 
 import org.junit.Test
 
