@@ -6,6 +6,7 @@
     tools:context=".Pdfselect">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,5 +17,14 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="34sp"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/selection2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-250dp"
+        android:text="@string/select"
+        android:textSize="18sp" />
 
 </FrameLayout>
