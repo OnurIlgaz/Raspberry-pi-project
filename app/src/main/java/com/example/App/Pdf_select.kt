@@ -1,4 +1,4 @@
-package com.example.thistime20jan
+package com.example.App
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
