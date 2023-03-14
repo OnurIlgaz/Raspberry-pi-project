@@ -1,19 +1,17 @@
 package com.example.thistime20jan
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.fragment.app.Fragment
 
-// TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
 class Image_select : Fragment() {
-    // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
     lateinit var observer : MyLifecycleObserver
@@ -41,7 +39,9 @@ class Image_select : Fragment() {
 
         selectButton.setOnClickListener {
             // Open the activity to select an image
-            observer.selectImage()
+            val file : Unit = observer.selectImage()
+            //val path : String = requireContext().filesDir.absolutePath
+            val cli = Client(file)
         }
     }
 }
