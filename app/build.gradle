@@ -6,7 +6,6 @@ plugins {
 android {
     namespace 'com.example.thistime20jan'
     compileSdk 33
-
     defaultConfig {
         applicationId "com.example.App"
         minSdk 28
