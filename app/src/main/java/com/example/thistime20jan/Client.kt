@@ -1,16 +1,25 @@
 package com.example.thistime20jan
 
+import android.util.Log
 import java.io.DataInputStream
 import java.io.DataOutputStream
 import java.io.File
 import java.io.FileInputStream
 import java.net.Socket
 
-class Client internal constructor(file : File) {
+class Client constructor(file : File) : Runnable {
+
+    val file : File
+
     init {
+        this.file = file
+    }
+
+    override fun run(){
         // Create Client Socket connect to port 900
         try {
-            Socket("localhost", 900).use { socket ->
+            print("trying")
+            Socket("10.134.116.66", 9987).use { socket ->
                 dataInputStream =
                     DataInputStream(
                         socket.getInputStream()
@@ -19,7 +28,6 @@ class Client internal constructor(file : File) {
                     DataOutputStream(
                         socket.getOutputStream()
                     )
-                println("Sending the File to the Server")
                 // Call SendFile Method
                 sendFile(file)
                 dataInputStream!!.close()
@@ -55,4 +63,5 @@ class Client internal constructor(file : File) {
             fileInputStream.close()
         }
     }
+
 }

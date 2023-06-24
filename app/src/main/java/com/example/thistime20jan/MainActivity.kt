@@ -2,6 +2,7 @@ package com.example.thistime20jan
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
